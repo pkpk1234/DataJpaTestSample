@@ -27,7 +27,7 @@ public class DataJpaTestApplicationTests {
 		this.testEntityManager.persist(new Person("li2","jiaming2",33));
 		List<Person> list = this.personRepostroy.findAll();
 		list.stream().forEach(System.out::println);
-		assertTrue("only one reuslt",list.size() == 1);
+		assertTrue("only one result",list.size() == 1);
 	}
 
 }
